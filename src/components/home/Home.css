@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    background-color: #0d1224;
+    color: white;
+  }
+  
+  .hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: between;
+    padding: 4rem 1rem;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: -98px;
+    z-index: -10;
+    width: 100%;
+    height: auto;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  @media (min-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 5rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+    }
+  }
+  
+  .highlight {
+    color: #16f2b3;
+  }
+  
+  .highlight-alt {
+    color: #16f2b3;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.25rem;
+    margin: 3rem 0;
+  }
+  
+  .social-icon {
+    color: #ff1493;
+    transition: transform 0.3s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.25);
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: medium;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .contact-button {
+    background: linear-gradient(to right, #ff1493, #9400d3);
+    border-radius: 9999px;
+    padding: 1px;
+  }
+  
+  .contact-button span {
+    background-color: #0d1224;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .resume-button {
+    background: linear-gradient(to right, #ff1493, #9400d3);
+    border-radius: 9999px;
+    padding: 0.75rem 1rem;
+  }
+  
+  .resume-button:hover {
+    text-decoration: none;
+  }
+  
+  .code-box {
+    position: relative;
+    left: 70px;
+    width: 500px;
+    border: 1px solid #1b2c68a0;
+    background: linear-gradient(to right, #0a0d37, #0d1224);
+    border-radius: 0.5rem;
+  }
+  
+  .code-header {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .circle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+  }
+  
+  .red {
+    background-color: #f87171;
+  }
+  
+  .orange {
+    background-color: #fb923c;
+  }
+  
+  .green {
+    background-color: #34d399;
+  }
+  
+  .code-content {
+    overflow: hidden;
+    border-top: 2px solid #1b2c68a0;
+    padding: 1rem;
+    font-family: monospace;
+  }
+  
+  .code {
+    color: #d1d5db;
+    white-space: pre;
+  }
+  
+  .keyword {
+    color: #ff1493;
+  }
+  
+  .variable {
+    color: #fff;
+  }
+  
+  .operator {
+    color: #ff1493;
+  }
+  
+  .bracket {
+    color: #6b7280;
+  }
+  
+  .property {
+    color: #fff;
+  }
+  
+  .string {
+    color: #fbbf24;
+  }
+  
+  .array {
+    color: #6b7280;
+  }
+  
+  .boolean {
+    color: #f97316;
+  }
+  
+  .function {
+    color: #10b981;
+  }
+  
+  
+  .condition {
+    color: #9ca3af;
+  }
+  
+  .this {
+    color: #0ea5e9;
+  }
+  
+  .indent {
+    padding-left: 2rem;
+  }
+  
+  .number {
+    color: #f97316;
+  }
+
+  .button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #ffffff;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
